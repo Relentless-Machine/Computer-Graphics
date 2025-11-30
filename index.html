@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Graphics - Fall 2025</title>
+    <style>
+        /* SCU/Academic Style Reset */
+        * { box-sizing: border-box; }
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #333;
+            line-height: 1.5;
+            margin: 0;
+            background-color: #fff;
+        }
+        a {
+            color: #BD0101; /* SCU Red-ish accent */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        .header-content a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .header-content a:hover {
+            color: #BD0101;
+        }
+
+        /* Main Title Area */
+        .course-title {
+            padding: 50px 0 30px;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 300; /* Light weight to be academic/modern */
+            margin: 0 0 15px 0;
+            color: #000;
+            letter-spacing: -0.5px;
+        }
+        .student-meta {
+            font-size: 1.2rem;
+            color: #555;
+            font-weight: 300;
+        }
+        .student-meta strong {
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* Assignments List */
+        .section-title {
+            font-size: 1.4rem;
+            color: #333;
+            border-bottom: 2px solid #BD0101; /* Accent color */
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .assignment-item {
+            margin-bottom: 35px;
+            padding-left: 20px;
+            border-left: 3px solid #eee;
+            transition: border-color 0.2s;
+        }
+        .assignment-item:hover {
+            border-left-color: #BD0101;
+        }
+        .hw-header {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+        .hw-id {
+            font-weight: bold;
+            color: #BD0101;
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+        .hw-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #222;
+        }
+        .hw-links {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+        .hw-links li {
+            display: inline-block;
+            margin-right: 25px;
+            font-size: 1rem;
+        }
+        .hw-links a {
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+        }
+        .hw-links a::before {
+            content: "→";
+            margin-right: 5px;
+            font-size: 1.1em;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 100px;
+            padding: 40px 0;
+            border-top: 1px solid #eee;
+            font-size: 0.85rem;
+            color: #888;
+            text-align: center;
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <span><a href="https://www.scu.edu.cn/" target="_blank">Sichuan University</a></span>
+            <span>Fall 2025</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="course-title">
+            <h1>Computer Graphics</h1>
+            <div class="student-meta">
+                Student: <strong>Zhu Haoran (朱浩然)</strong>
+            </div>
+        </div>
+
+        <div class="section-title">Assignments</div>
+
+        <div class="assignment-item">
+            <div class="hw-header">
+                <span class="hw-id">HW1</span>
+                <span class="hw-title">Sierpinski Gasket & Menger Sponge</span>
+            </div>
+            <ul class="hw-links">
+                <li><a href="Gasket/gasket2D.html">2D Sierpinski Gasket</a></li>
+                <li><a href="Gasket/menger3D.html">3D Menger Sponge</a></li>
+            </ul>
+        </div>
+
+        <div class="assignment-item">
+            <div class="hw-header">
+                <span class="hw-id">HW2</span>
+                <span class="hw-title">3D Wandering</span>
+            </div>
+            <ul class="hw-links">
+                <li><a href="3d-wandering.html">3D Wandering Scene</a></li>
+            </ul>
+        </div>
+
+        <div class="assignment-item">
+            <div class="hw-header">
+                <span class="hw-id">HW3</span>
+                <span class="hw-title">Phong Shading</span>
+            </div>
+            <ul class="hw-links">
+                <li><a href="Phongshading.html">Phong Shading Model</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2025 Zhu Haoran. All rights reserved.<br>
+        College of Software Engineering, Sichuan University.<br>
+        <br>
+        <a href="index_classic.html" style="color: #999; font-size: 0.8em; text-decoration: none;">Classic Version</a>
+    </footer>
+</body>
+</html>
