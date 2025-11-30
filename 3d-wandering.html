@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html style="background-color: rgba(188,190,192,1.0);">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>计算机图形学:网格建模与3D坐标变换</title>
+    <style type="text/css">
+        html{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            margin: 0px;
+            /*width: calc(100% - 10px);
+            height: calc(100% - 40px);*/
+            width: 100%;
+            height: 100%;   
+            overflow: hidden; /* 防止滚动条出现 */   
+        }
+    </style>
+    
+    <script type="text/javascript" src="./Common/webgl-utils.js"></script>
+    <script type="text/javascript" src="./Common/initShaders2.js"></script>
+    <script type="text/javascript" src="./Common/MVnew.js"></script>
+    <script type="text/javascript" src="./models-data.js"></script>
+    <script type="text/javascript" src="./3d-wandering.js"></script>
+        
+</head>
+<body>
+    <div style="display:flex; justify-content:space-between; line-height:20px; color:black; font-size:1vw;">    
+        <div>
+            <text>模型：</text>
+            <select onchange="modelChange(this.value)">
+                <option value="sun_earth" selected>太阳-地球</option>
+                <option value="cube">方块</option>
+                <option value="sphere">球</option>
+                <option value="hat">墨西哥帽</option>
+            </select>
+        </div>
+		<text>Z/C-物体整体放大/缩小</text>
+        <text>G-切换交互模式</text>
+        <text>W/S-相机绕X轴旋转</text>
+		<text>A/D-相机绕Y轴旋转</text>
+        <text>P-切换投影方式</text>
+        <text>M/N-透视投影时调整俯仰角</text>
+        <text>R/T-开启/关闭后向面剔除</text>
+        <text>B/V-开启/关闭深度缓存</text>
+        <text>空格-重置复位</text>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <canvas id="canvas">Oops ... your browser doesn't support the HTML5 canvas element</canvas>
+    </div>
+    
+</body>
+</html>

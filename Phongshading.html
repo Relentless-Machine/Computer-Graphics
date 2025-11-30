@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html style="background-color: rgba(188,190,192,1.0);">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>计算机图形学:明暗着色和纹理贴图</title>
+    <style type="text/css">
+        body{
+            margin: 5px;
+            width: calc(100vw - 10px);
+            height: calc(100vh - 40px);
+        }
+    </style>    
+	<script type="text/javascript" src="./Common/webgl-utils.js"></script>
+	<script type="text/javascript" src="./Common/initShaders2.js"></script>
+	<script type="text/javascript" src="./Common/MVnew.js"></script>
+	<script type="text/javascript" src="./Models.js"></script>
+	<script type="text/javascript" src="./configMaterialParameters.js"></script>
+	<script type="text/javascript" src="./configTexture.js"></script>
+    <script type="text/javascript" src="./Phongshading.js"></script>
+    </script>	
+</head>
+<body>
+    <div style="display:flex; justify-content:space-between; line-height:30px; color:black; font-size:1vw;">
+		<text>C/V-点光源/平行光源</text>
+		<text>Y/U-拉大/缩小光源距离</text>
+		<text>WS/AD-光源绕X/Y轴旋转</text>
+		<text>I/K/J/L/,/.移动摄像机</text>
+        <text>M/N-投影角zoomin/zoomout</text>
+        <text>1-镜面</text>
+        <text>2-立方体凹凸</text>
+        <text>3-地板凹凸</text>
+        <text>4-半透明</text>
+        <text>5-雾化</text>
+        <text>6-PCF</text>
+        <text>空格-重置复位</text>
+    </div>
+	<canvas id="canvas">Oops ... your browser doesn't support the HTML5 canvas element</canvas>
+    <img id = "cubeTexImage" src = "container.png" hidden></img>
+    <img id = "planeTexImage" src = "wood.png" hidden></img>
+    <!--input id="fileBtn" type="file" accept="image/*" onchange="useTexture(this)" style="display: none;"/-->
+</body>
+</html>
